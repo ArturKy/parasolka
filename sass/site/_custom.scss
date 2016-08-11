@@ -1,0 +1,577 @@
+/* //Small only // ... < 640px
+@media screen and (max-width: 39.9375em) {}
+
+//Medium and up //  640 < ...
+@media screen and (min-width: 40em) {}
+
+//Medium only // 640 <  ...  < 1023px
+@media screen and (min-width: 40em) and (max-width: 63.99em) {}
+
+//Large and up // 1024 < ...
+@media screen and (min-width: 64em) {}
+*/
+
+body *:not(#wpadminbar *) {
+  font-family: 'dosisbook', sans-serif;
+  color: #181818;
+}
+body * {
+  transition: 0.2s linear all;
+  font-family: 'dosisbook', sans-serif;
+}
+#page {
+  overflow-x: hidden;
+}
+#recent-posts-2 .widget-title {
+  display: none !important;
+}
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* START footer & header styling*/
+.logo img {
+  height: 70px;
+}
+#header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 21px 0px rgba(20, 20, 20, 0.4);
+}
+#primary-menu li a {
+  text-transform: uppercase;
+  font-family: 'dosisbold', sans-serif;
+  padding-top: 26px;
+}
+.menu-item {
+  color: #181818;
+  & a:hover{
+    color: #ff3333;
+  }
+}
+footer {
+  background-color: #fbf6f6;
+  min-height: 200px;
+}
+footer .row {
+  padding: 3% 8% 0 8%;
+}
+.footer-brush {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6875rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 20px 0 0 20px;
+}
+.adres {
+  background-image: url("img/brush-pink-small.png");
+}
+.footer-text a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-text {
+  font-size: 0.875rem;
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.contact {
+  background-image: url("img/brush-green-small.png");
+  margin-right: 20px;
+}
+.credits {
+  background-color: #fbf6f6;
+  padding-bottom: 30px;
+}
+.credit {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 0 10%;
+}
+.credits span a {
+  color: inherit;
+}
+.footer .columns:last-child:not(:first-child) {
+  float: left;        //nadpisanie niechcianego stylu z foundation
+}
+.antispam {
+  display: none !important;
+}
+.mail {
+  display: inline-block;
+}
+.burger-h {
+  height: 70px;
+}
+.hamburger {
+	position:relative;
+	top:29px;
+	width:30px;
+	height:17px;
+	float:right;
+	cursor:pointer;
+	z-index: 900;
+	margin-right:10px;
+	.line {
+		height:3px;
+		width:100%;
+		position:absolute;
+		background:$color__hamburger;
+	}
+	&:hover {
+		.line {
+			background:$color__hamburger;
+		}
+	}
+	.line1 {
+		top:0;
+		left:0;
+	}
+	.line2 {
+		top:7px;
+		left:0;
+	}
+	.line3 {
+		top:14px;
+		left:0;
+	}
+	&.open {
+		.line1 {
+			top:8px;
+			transform: rotate(45deg);
+		}
+		.line2 {
+			opacity:0;
+		}
+		.line3 {
+			top:8px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+.block {
+  display: block;
+}
+#primary-menu {
+  @media screen and (max-width: 39.75em) {
+    display: none;
+  }
+  @media screen and (min-width: 40em) {
+    display: block !important;
+    float: right;
+  }
+  & li a {
+  font-size: 0.8em;
+  }
+  @media screen and (min-width: 65em) {
+    & li a {
+    font-size: 1em;
+    }
+  }
+}
+
+// @media screen and (min-width: 40em) {
+//   #primary-menu {
+//     float: right;
+//   }
+//   #primary-menu {
+//     display: block;
+//   }
+//   .menu li a {
+//   font-size: 0.8em;
+//   }
+// }
+// @media screen and (min-width: 65em) {
+//   .menu li a {
+//     font-size: 1em;
+//   }
+// }
+
+  /* END footer & header styling*/
+
+  /*START JUMBO styling*/
+.jumbotron {
+  background-color: #dbede3;
+  background-image: url("img/jumbo-bg.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.jumbo-brush h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin-before: 0;
+  margin-after: 0;
+}
+.jumbo-brush h2 p{
+  font-family: 'dosisbold', sans-serif;
+  line-height: 0.9;
+}
+.arrow-down a img {
+  height: 52px;
+  width: 52px;
+  margin: 30px 0 20px 0;
+}
+.jumbo-brush {
+  background-image: url("img/brush-pink.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 20% 100%;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 39.99em) {
+  .jumbotron {
+    background-size: 90%;
+    background-position: top center;
+    padding-top: 40%;
+  }
+  .jumbo-brush h1 {
+    font-size: 15vmin;
+    padding-bottom: 20px;
+  }
+  .jumbo-brush .head2 h2 p{
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .jumbotron {
+    background-size: 60%;
+    background-position: top center;
+    padding-top: 30%;
+  }
+  .jumbo-brush {
+    background-size: 22%;
+  }
+  .jumbo-brush h1 {
+    font-size: 10vw;
+  }
+  .jumbo-brush .head2 h2 p{
+    font-size: 36px;
+  }
+  #jumbo-text {
+     float: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .jumbotron {
+    background-position: right center;
+    background-size: 50%;
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
+  .jumbo-brush {
+    background-size: 20%;
+  }
+  .jumbo-brush h1 {
+    font-size: 119px;
+  }
+  .head2 {
+    float: right;
+  }
+  .jumbo-brush .head2 h2 p {
+    font-size: 34px;
+  }
+}
+      /*STOP JUMBO styling*/
+
+      /*START O-FUNDACJI & AKCJE styling*/
+.button.get-to-know, .button.contactus, .form-submit input[type="submit"] {
+  border-radius: 28px;
+  background-color: #ff3333;
+  margin-bottom: 2em;
+  display: block;
+  width: 11em;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s, ease;
+}
+.button.contactus {
+  width: 15em;
+  height: 2.9em;
+}
+.form-submit input[type="submit"] {
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  width: 8em;
+  font-size: 1em;
+  margin-left: 30px;
+  display: inline-block;
+}
+.button.get-to-know:hover, .button.contactus:hover, .form-submit input[type="submit"]:hover {
+  background-color: #ff3333;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(255,51,51,0.33);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(255,51,51,0.33);
+  box-shadow: 0px 0px 30px 10px rgba(255,51,51,0.33);
+}
+.page-title {
+  font-family: 'Pacifico', cursive;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+.ofundacji, .akcje {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ofundacji-text, .akcje-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#akcje {
+  background-color: #dbede3;
+}
+.page-text {
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 39.99em) {
+  .ofundacji, .akcje {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  section p {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+  }
+  #akcje .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 49.99em) {
+  .ofundacji-text p {
+    float: right;
+  }
+  .page-ofundacji-text p {
+    float: none;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .ofundacji img {
+    max-width: 400px;
+  }
+  .entry-content .ofundacji img {
+    display: block;
+    margin: 0 auto;
+  }
+  .ofundacji-text p, .akcje-text p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 64em) {
+  .ofundacji-text, .akcje-text {
+    min-height: 500px;
+  }
+  #ofundacji .row {
+    display: flex;
+    .image {
+      align-self: center;
+    }
+  }
+  .page-title {
+    font-size: 70px;
+  }
+}
+
+/* START ERROR 404 */
+.not-found {
+  background-image: url("img/kleks.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 75% 100%;
+  min-height: 500px;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  .not-found-text {
+  }
+  * {font-family: 'dosissemibold', sans-serif;}
+  h2 {
+    text-transform: uppercase;
+    font-size: 5em;
+  }
+  h4 {
+    font-size: 2.56em;
+  }
+  p{
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
+  .not-found {
+    background-size: 250px;
+    background-position: center top;
+    padding-top: 200px;
+    padding-bottom: 5%;
+    .not-found-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        text-transform: uppercase;
+        font-size: 4em;
+      }
+      h4 {
+        font-size: 1.9em;
+      }
+      p{
+        font-size: 1em;
+      }
+    }
+  }
+}
+/* STOP ERROR 404 */
+
+/*Start wierd floating parallax elemnts*/
+
+.element {
+	position:absolute;
+  z-index: 0;
+
+	@media all and (max-width:63.75em) {
+		display:none;
+	}
+
+	&.e1 {
+		top:10%;
+		left:calc(50% - 370px);
+	}
+	&.e2 {
+		top:6%;
+		left:calc(50% - 50px);
+	}
+	&.e3 {
+		top:16%;
+		left:calc(50% - 210px);
+	}
+	&.e4 {
+		top:95%;
+		left:calc(50% - 240px);
+	}
+  &.e5 {
+		top:20%;
+		left:calc(50% + 450px);
+    z-index: -1;
+	}
+	&.e6 {
+		top:32%;
+		left:calc(50% - 450px);
+    z-index: -1;
+	}
+	&.e7 {
+		top:65%;
+		left:calc(50% - 400px);
+    z-index: -1;
+	}
+	&.e8 {
+		top:120%;
+		left:calc(50% + 500px);
+    z-index: -1;
+	}
+}
+/*END wierd floating parallax elemnts*/
+
+/*START ko0ntakt site*/
+.form-name input, .form-mail input, .form-message textarea {
+  background-color: #f6f6f6;
+  border: none
+}
+button, input, select, textarea {
+  font-family: 'dosisbook', sans-serif;
+  color: #181818;
+}
+::-webkit-input-placeholder {
+    font-family: 'dosisbook', sans-serif;
+    color: #181818;
+}
+:-moz-placeholder {
+    font-family: 'dosisbook', sans-serif;
+    color: #181818;
+}
+::-moz-placeholder {
+    font-family: 'dosisbook', sans-serif;
+    color: #181818;
+}
+:-ms-input-placeholder {
+    font-family: 'dosisbook', sans-serif;
+    color: #181818;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+.pt-4 {
+  padding-top: 5rem;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.form-message {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  & textarea:focus {
+  	background-color: #fefefe;
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width: 39.75em) {
+  .img-bg img {
+  width: auto;
+  height: auto;
+  display: block;
+  }
+}
+.img-bg-large {
+  padding-top: 100px;
+  height: 100%;
+  @media screen and (max-width: 63.75em) {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 39.75em), (min-width: 64em) {
+  .img-bg-medium {
+  display:none;
+  }
+}
+.img-bg-medium img {
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -5em;
+}
+
+/*END kontakt site*/
+
+
+.statut h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4.5em;
+  text-align: center;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  z-index: 5
+}
+.statut-text {
+  z-index: 5
+}
