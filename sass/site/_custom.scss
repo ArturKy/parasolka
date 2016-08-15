@@ -37,6 +37,7 @@ body * {
 #header {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 21px 0px rgba(20, 20, 20, 0.4);
+  z-index: 5;
 }
 #primary-menu li a {
   text-transform: uppercase;
@@ -176,23 +177,6 @@ footer .row {
   }
 }
 
-// @media screen and (min-width: 40em) {
-//   #primary-menu {
-//     float: right;
-//   }
-//   #primary-menu {
-//     display: block;
-//   }
-//   .menu li a {
-//   font-size: 0.8em;
-//   }
-// }
-// @media screen and (min-width: 65em) {
-//   .menu li a {
-//     font-size: 1em;
-//   }
-// }
-
   /* END footer & header styling*/
 
   /*START JUMBO styling*/
@@ -227,7 +211,7 @@ footer .row {
   background-position: 20% 100%;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 39.99em) {
+@media screen and (max-width: 39.75em) {
   .jumbotron {
     background-size: 90%;
     background-position: top center;
@@ -241,7 +225,7 @@ footer .row {
     font-size: 25px;
   }
 }
-@media screen and (min-width: 40em) and (max-width: 63.99em) {
+@media screen and (min-width: 40em) and (max-width: 63.75em) {
   .jumbotron {
     background-size: 60%;
     background-position: top center;
@@ -335,7 +319,7 @@ footer .row {
   line-height: 1.2;
 }
 
-@media screen and (max-width: 39.99em) {
+@media screen and (max-width: 39.75em) {
   .ofundacji, .akcje {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -358,7 +342,7 @@ footer .row {
     float: none;
   }
 }
-@media screen and (min-width: 40em) and (max-width: 63.99em) {
+@media screen and (min-width: 40em) and (max-width: 63.75em) {
   .ofundacji img {
     max-width: 400px;
   }
@@ -391,13 +375,11 @@ footer .row {
 .not-found {
   background-image: url("img/kleks.png");
   background-repeat: no-repeat;
-  background-size: 75%;
-  background-position: 75% 100%;
+  background-size: 50%;
+  background-position: 75% 50%;
   min-height: 500px;
   padding-top: 15%;
   padding-bottom: 15%;
-  .not-found-text {
-  }
   * {font-family: 'dosissemibold', sans-serif;}
   h2 {
     text-transform: uppercase;
@@ -411,7 +393,7 @@ footer .row {
   }
 }
 
-@media screen and (max-width: 39.9em) {
+@media screen and (max-width: 39.75em) {
   .not-found {
     background-size: 250px;
     background-position: center top;
@@ -573,5 +555,88 @@ button, input, select, textarea {
   z-index: 5
 }
 .statut-text {
+  position: relative;
   z-index: 5
 }
+
+/*START zrealizowane akcje*/
+@media screen and (min-width: 64em) {
+  .side-content {
+    background-color: white;
+  }
+  .blog .hentry, .single .hentry  {
+    margin: 0;
+  }
+  .blog .post, .single .post {
+    background: rgba(236,246,240,1);
+    background: -moz-linear-gradient(left, rgba(236,246,240,1) 0%, rgba(236,246,240,1) 54%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(236,246,240,1)), color-stop(54%, rgba(236,246,240,1)), color-stop(57%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(236,246,240,1) 0%, rgba(236,246,240,1) 54%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(236,246,240,1) 0%, rgba(236,246,240,1) 54%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(236,246,240,1) 0%, rgba(236,246,240,1) 54%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(236,246,240,1) 0%, rgba(236,246,240,1) 54%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf6f0', endColorstr='#ffffff', GradientType=1 );
+  }
+}
+@media screen and (max-width: 63.75em) {
+  #recent-posts-2 {
+    border-bottom: 1px solid #656565;
+  }
+}
+.side-menu {
+  padding-top: 30px;
+  & li {
+    padding: 7px;
+    list-style: circle;
+    @media screen and (max-width: 63.75em) {
+      display: inline-flex;
+      margin-right: 10px;
+    }
+    &:hover {
+      color: #ff3333;
+      list-style: disc;
+    }
+    & a{
+    color: #181818;
+      &:hover {
+        color: #ff3333;
+      }
+    }
+  }
+}
+
+
+.akcje-content-header {
+  min-height: 400px;
+  padding-top: 30px;
+  background-image: url('img/akcje-site-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    color: black;
+    margin-left: 12.5%;
+    text-shadow:
+   -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff;
+  }
+}
+
+.post .entry-title {
+  color: #ff3333;
+  margin-bottom: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+
+/*END zrealizowane akcje*/
