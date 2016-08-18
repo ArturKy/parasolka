@@ -18,8 +18,8 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class="jumbotron">
-        <div class="max-width row relative with-elemnts">
-          <div class="jumbo-brush columns large-12 medium-12 small-12">
+        <div class="max-width row relative">
+          <div class="jumbo-brush columns large-12 medium-12 small-12 with-elemnts">
             <h1><?php echo get_field("jumbo-tytul") ?></h1>
             <div id="jumbo-text" class="head2 columns large-10 small-centered medium-8 small-10"><h2><?php echo get_field("jumbo-podtytul") ?></h2></div>
           </div>
@@ -43,7 +43,7 @@ get_header();?>
           <div class="ofundacji-text columns large-5 medium-6 medium-uncentered small-centered small-12">
             <h3 class="page-title">o fundacji</h3>
             <p> <?php echo get_field("ofundacji-lead") ?> </p>
-            <a href="<?php bloginfo('template_url'); ?>/about" class="button alert get-to-know">  dowiedz sie wiecej  </a>
+            <a href="<?php bloginfo('template_url'); ?>/o-fundacji" class="button alert get-to-know">  dowiedz się więcej  </a>
           </div>
         </div>
       </section>
@@ -53,7 +53,7 @@ get_header();?>
           <div class="akcje-text columns large-5 medium-7 medium-uncentered small-centered small-12">
             <h3 class="page-title">zrealizowane akcje</h3>
             <p> <?php echo get_field("akcje-lead") ?> </p>
-            <a href="<?php bloginfo('template_url'); ?>/akcje" class="button alert get-to-know"> dowiedz sie wiecej </a>
+            <a href="<?php bloginfo('template_url'); ?>/akcje" class="button alert get-to-know"> dowiedz się więcej </a>
           </div>
           <div class="image columns large-7 medium-uncentered medium-5 small-centered small-10">
             <img src="<?php bloginfo('template_url'); ?>/img/akcje.png">

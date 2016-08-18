@@ -15,7 +15,7 @@
 
 	<footer>
 		<div class="row">
-			<a href="#header" class="float-right columns small-3 medium-2 large-1"><img src="<?php bloginfo('template_url'); ?>/img/svg/arrowup.svg" alt="wróć do poczatku strony" /></a>
+			<a href="#header" class="arrow-up columns small-centered small-2 medium-2 large-1"><img src="<?php bloginfo('template_url'); ?>/img/svg/arrowup.svg" alt="wróć do poczatku strony" /></a>
 			<div class="medium-9 large-5 columns flex">
 				<span class="footer-brush adres">adres</span>
 				<span class='footer-text'>Siedziba kancelarii (Poznań)<br>ul. Marcelińska 62 lok. 7 (Dwór Marcelin)<br>60-354 Poznań</span>
@@ -38,7 +38,7 @@
 		<div class="row">
 			<div class="credit columns large-centered-10 medium-centered-10">
 				<span>Copyrights by: <a href="http://fundacjaparasolka.pl" >fundacjaparasolka.pl</a></span>
-				<span><a href="http://kreatik.pl">Projekt i realizacja: <img src="<?php bloginfo('template_url'); ?>/img/svg/kreatik-logo.svg" alt="Kreatik.pl"/></a></span>
+				<span><a href="http://kreatik.pl" target="_blank">Projekt i realizacja: <img src="<?php bloginfo('template_url'); ?>/img/svg/kreatik-logo.svg" alt="Kreatik.pl"/></a></span>
 			</div>
 		</div>
 	</section>

@@ -11,17 +11,22 @@
 <?php $src = get_template_directory_uri(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="row">
-	<div class="side-menu columns large-3">
+	<div class="side-menu columns large-3 show-for-large">
 		<?php get_sidebar() ?>
 	</div>
 
-	<div class="side-content columns large-9 medium-10 small-12">
+	<div class="side-content columns large-9 medium-12 small-12">
 		<div class="akcje-content-header">
-			<h2>Zrealizowane <br> akcje</h2>
-
+			<div class="image">
+				<img src="<?php echo $src; ?>/img/akcje-site-bg.png" alt="" />
+			</div>
+			<h2>Zrealizowane <span>akcje</span></h2>
+		</div>
+		<div class="side-menu columns small-12 hide-for-large">
+			<?php get_sidebar('center') ?>
 		</div>
 			<div class="row">
-				<div class="large-9 small-centered medium-centered medium-10 small-12">
+				<div class="large-9 small-centered medium-centered medium-10 small-11">
 					<header class="entry-header">
 						<?php
 							the_title( '<h1 class="entry-title">', '</h1>' );

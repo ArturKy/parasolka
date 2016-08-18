@@ -26,13 +26,13 @@ get_header(); ?>
 						<div class="columns large-6 medium-6 small-6">
 							<span class="footer-brush adres">kontakt</span><br>
 							<span class='footer-text'>
-								t: <?php echo get_field( "telefon" ); ?><br>
-								e: <?php echo get_field( "mail" ); ?> <br><br>
+								t: <a href="tel:<?php echo get_field( "telefon" ); ?>"><?php echo get_field( "telefon" ); ?> </a><br>
+								e: <a href="mailto:<?php echo get_field( "mail" ); ?>"><?php echo get_field( "mail" ); ?> </a> <br><br>
 								a: <?php echo get_field( "adres" ); ?>
 							</span>
 						</div>
 						<div class="columns large-6 medium-6 small-6">
-							<span class="footer-brush contact">dane rejestrone</span><br>
+							<span class="footer-brush contact">dane rejestrowe</span><br>
 							<span class='footer-text'>
 								REGON: <?php echo get_field( "regon" ); ?><br>
 								NIP: <?php echo get_field( "nip" ); ?> <br>
@@ -59,9 +59,9 @@ get_header(); ?>
 
 	<section class="credits">
 		<div class="row">
-			<div class="credit columns large-centered-10 medium-centered-10">
+			<div class="credit credit-kontakt columns large-centered-10 medium-centered-10">
 				<span>Copyrights by: <a href="http://fundacjaparasolka.pl" >fundacjaparasolka.pl</a></span>
-				<span><a href="http://kreatik.pl">Projekt i realizacja: <img src="<?php bloginfo('template_url'); ?>/img/svg/kreatik-logo.svg" alt="Kreatik.pl"/></a></span>
+				<span><a href="http://kreatik.pl" target="_blank">Projekt i realizacja: <img src="<?php bloginfo('template_url'); ?>/img/svg/kreatik-logo.svg" alt="Kreatik.pl"/></a></span>
 			</div>
 		</div>
 	</section>

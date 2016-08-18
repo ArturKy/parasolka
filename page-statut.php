@@ -18,7 +18,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="row">
-				<div class="statut columns small-8 small-centered with-elements">
+				<div class="statut columns small-11 medium-10 large-9 small-centered with-elements">
 					<h2><?php echo get_field( "tytul" ); ?></h2>
 					<div class="statut-text"><?php echo get_field( "statut" ); ?></div>
 					<div class="element e5" data-depth="2"><img src="<?php echo $src; ?>/img/e1.png" /></div>

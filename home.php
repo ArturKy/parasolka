@@ -12,6 +12,6 @@
  * @package parasolka
  */
 
-get_template_part('single');
-// include'single.php';
+get_template_part('single');     // include'single.php';
+
 ?>
