@@ -280,7 +280,7 @@ footer .footer-text {
       /*STOP JUMBO styling*/
 
       /*START O-FUNDACJI & AKCJE styling*/
-.button.get-to-know, .button.contactus, .form-submit input[type="submit"] {
+.button.get-to-know, .button.contactus, .form-submit input[type="submit"], button #catapultCookie {
   border-radius: 28px;
   background-color: #ff3333;
   margin-bottom: 2em;
@@ -289,6 +289,17 @@ footer .footer-text {
   margin-left: auto;
   margin-right: auto;
   transition: 0.5s, ease;
+}
+.ctcc-right-side button#catapultCookie {
+  border-radius: 15px !important;
+  background-color: #ff3333 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(255,51,51,0.33) !important;
+    -moz-box-shadow: 0px 0px 20px 10px rgba(255,51,51,0.33) !important;
+    box-shadow: 0px 0px 20px 10px rgba(255,51,51,0.33) !important;
+  }
 }
 .button.contactus {
   width: 15em;
@@ -315,6 +326,7 @@ footer .footer-text {
   color: black;
   text-align: center;
   font-size: 50px;
+  z-index: 5;
 }
 .ofundacji, .akcje {
   padding-top: 30px;
@@ -331,6 +343,10 @@ footer .footer-text {
 }
 .page-text {
   line-height: 1.2;
+}
+.entry-content p {
+  position: relative;
+  z-index: 5;
 }
 
 @media screen and (max-width: 39.375em) {
@@ -389,7 +405,7 @@ footer .footer-text {
 .not-found {
   background-image: url("img/kleks.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
   background-position: 75% 50%;
   min-height: 500px;
   padding-top: 15%;
@@ -457,6 +473,8 @@ footer .footer-text {
 	&.e4 {
 		top:95%;
 		left:calc(50% - 240px);
+    width: 50px;
+    height: 50px;
 	}
   &.e5 {
 		top:20%;
@@ -474,6 +492,140 @@ footer .footer-text {
     z-index: -1;
 	}
 	&.e8 {
+		top:120%;
+		left:calc(50% + 500px);
+    z-index: -1;
+	}
+  &.e9 {
+		top:87%;
+		left:calc(50% + 350px);
+    width: 35px;
+    height: 35px;
+	}
+  &.e10 {
+		top:95%;
+		left:calc(50% + 500px);
+    z-index: -1;
+	}
+  &.e11 {
+		top:92%;
+		left:calc(50% + 50px);
+    z-index: -1;
+	}
+  &.e12 {
+		top:135%;
+		left:calc(50% + 420px);
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+	}
+  &.e13 {
+		top:143%;
+		left:calc(50% - 150px);
+    width: 25px;
+    height: 25px;
+	}
+  &.e14 {
+		top:155%;
+		left:calc(50% - 300px);
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+	}
+  &.e15 {
+		top:152%;
+		left:calc(50% - 430px);
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+	}
+  &.e16 {
+    top:148%;
+    left:calc(50%);
+    z-index: 11;
+  }
+  &.e17 {
+    top:205%;
+    left:calc(50% + 500px);
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+  }
+  &.e18 {
+    top:28%;
+    left:calc(50% - 500px);
+    z-index: -1;
+  }
+  &.e19 {
+    top:50%;
+    left:calc(50% - 450px);
+    z-index: -1;
+  }
+  &.e20 {
+    top:25%;
+    left:calc(50% + 450px);
+    z-index: -1;
+  }
+  &.e21 {
+    top:70%;
+    left:calc(50% + 400px);
+    z-index: -1;
+  }
+  &.e22 {
+    top:20%;
+    left:calc(50%);
+    z-index: -1;
+  }
+  &.e23 {
+    top:80%;
+    left:calc(50% + 50px);
+    z-index: 1;
+  }
+  &.e24 {
+    top:25%;
+    left:calc(50% + 400px);
+    z-index: 1;
+  }
+  &.e25 {
+    top:95%;
+    left:calc(50% + 500px);
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+  }
+  &.e26 {
+		top:25%;
+		left:calc(50% + 500px);
+    z-index: -1;
+	}
+  &.e27 {
+		top:30%;
+		left:calc(50%);
+    z-index: -1;
+	}
+  &.e28 {
+		top:85%;
+		left:calc(50% - 100px);
+    z-index: 1;
+	}
+  &.e29 {
+    top:90%;
+    left:calc(50% + 500px);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+	}
+  &.e30 {
+		top:25%;
+		left:calc(50% + 450px);
+    z-index: 1;
+	}
+  &.e31 {
+		top:45%;
+		left:calc(50% + 50px);
+    z-index: 1;
+	}
+  &.e8 {
 		top:120%;
 		left:calc(50% + 500px);
     z-index: -1;

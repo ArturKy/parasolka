@@ -1681,7 +1681,7 @@ footer .footer-text {
     font-size: 34px; } }
 /*STOP JUMBO styling*/
 /*START O-FUNDACJI & AKCJE styling*/
-.button.get-to-know, .button.contactus, .form-submit input[type="submit"] {
+.button.get-to-know, .button.contactus, .form-submit input[type="submit"], button #catapultCookie {
   border-radius: 28px;
   background-color: #ff3333;
   margin-bottom: 2em;
@@ -1690,6 +1690,16 @@ footer .footer-text {
   margin-left: auto;
   margin-right: auto;
   transition: 0.5s, ease; }
+
+.ctcc-right-side button#catapultCookie {
+  border-radius: 15px !important;
+  background-color: #ff3333 !important;
+  text-shadow: none !important;
+  box-shadow: none !important; }
+  .ctcc-right-side button#catapultCookie:hover {
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(255, 51, 51, 0.33) !important;
+    -moz-box-shadow: 0px 0px 20px 10px rgba(255, 51, 51, 0.33) !important;
+    box-shadow: 0px 0px 20px 10px rgba(255, 51, 51, 0.33) !important; }
 
 .button.contactus {
   width: 15em;
@@ -1715,7 +1725,8 @@ footer .footer-text {
   font-family: 'Pacifico', cursive;
   color: black;
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  z-index: 5; }
 
 .ofundacji, .akcje {
   padding-top: 30px;
@@ -1732,6 +1743,10 @@ footer .footer-text {
 
 .page-text {
   line-height: 1.2; }
+
+.entry-content p {
+  position: relative;
+  z-index: 5; }
 
 @media screen and (max-width: 39.375em) {
   .ofundacji, .akcje {
@@ -1779,7 +1794,7 @@ footer .footer-text {
 .not-found {
   background-image: url("img/kleks.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
   background-position: 75% 50%;
   min-height: 500px;
   padding-top: 15%;
@@ -1830,7 +1845,9 @@ footer .footer-text {
     left: calc(50% - 210px); }
   .element.e4 {
     top: 95%;
-    left: calc(50% - 240px); }
+    left: calc(50% - 240px);
+    width: 50px;
+    height: 50px; }
   .element.e5 {
     top: 20%;
     left: calc(50% + 450px);
@@ -1843,6 +1860,116 @@ footer .footer-text {
     top: 65%;
     left: calc(50% - 400px);
     z-index: -1; }
+  .element.e8 {
+    top: 120%;
+    left: calc(50% + 500px);
+    z-index: -1; }
+  .element.e9 {
+    top: 87%;
+    left: calc(50% + 350px);
+    width: 35px;
+    height: 35px; }
+  .element.e10 {
+    top: 95%;
+    left: calc(50% + 500px);
+    z-index: -1; }
+  .element.e11 {
+    top: 92%;
+    left: calc(50% + 50px);
+    z-index: -1; }
+  .element.e12 {
+    top: 135%;
+    left: calc(50% + 420px);
+    z-index: -1;
+    width: 50px;
+    height: 50px; }
+  .element.e13 {
+    top: 143%;
+    left: calc(50% - 150px);
+    width: 25px;
+    height: 25px; }
+  .element.e14 {
+    top: 155%;
+    left: calc(50% - 300px);
+    width: 50px;
+    height: 50px;
+    z-index: 1; }
+  .element.e15 {
+    top: 152%;
+    left: calc(50% - 430px);
+    z-index: 1;
+    width: 30px;
+    height: 30px; }
+  .element.e16 {
+    top: 148%;
+    left: calc(50%);
+    z-index: 11; }
+  .element.e17 {
+    top: 205%;
+    left: calc(50% + 500px);
+    z-index: 1;
+    width: 25px;
+    height: 25px; }
+  .element.e18 {
+    top: 28%;
+    left: calc(50% - 500px);
+    z-index: -1; }
+  .element.e19 {
+    top: 50%;
+    left: calc(50% - 450px);
+    z-index: -1; }
+  .element.e20 {
+    top: 25%;
+    left: calc(50% + 450px);
+    z-index: -1; }
+  .element.e21 {
+    top: 70%;
+    left: calc(50% + 400px);
+    z-index: -1; }
+  .element.e22 {
+    top: 20%;
+    left: calc(50%);
+    z-index: -1; }
+  .element.e23 {
+    top: 80%;
+    left: calc(50% + 50px);
+    z-index: 1; }
+  .element.e24 {
+    top: 25%;
+    left: calc(50% + 400px);
+    z-index: 1; }
+  .element.e25 {
+    top: 95%;
+    left: calc(50% + 500px);
+    z-index: -1;
+    width: 50px;
+    height: 50px; }
+  .element.e26 {
+    top: 25%;
+    left: calc(50% + 500px);
+    z-index: -1; }
+  .element.e27 {
+    top: 30%;
+    left: calc(50%);
+    z-index: -1; }
+  .element.e28 {
+    top: 85%;
+    left: calc(50% - 100px);
+    z-index: 1; }
+  .element.e29 {
+    top: 90%;
+    left: calc(50% + 500px);
+    z-index: 1;
+    width: 50px;
+    height: 50px; }
+  .element.e30 {
+    top: 25%;
+    left: calc(50% + 450px);
+    z-index: 1; }
+  .element.e31 {
+    top: 45%;
+    left: calc(50% + 50px);
+    z-index: 1; }
   .element.e8 {
     top: 120%;
     left: calc(50% + 500px);

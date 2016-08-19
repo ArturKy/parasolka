@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+<?php $src = get_template_directory_uri(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -21,7 +21,7 @@ get_header(); ?>
           <div class="entry-content">
 
             <section id="ofundacji" class="ofundacji">
-              <div class="max-width row ">
+              <div class="max-width row with-elements">
                 <div class="image columns large-7 large-uncentered medium-12 small-centered small-10">
                   <img src="<?php echo get_field( "background_image" ); ?>">
                 </div>
@@ -30,6 +30,10 @@ get_header(); ?>
                   <div class="page-text"> <?php echo get_field( "tekst" ); ?> </div>
                   <a href="<?php bloginfo('template_url'); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
                 </div>
+								<div class="element e25" data-depth="2.5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
+								<div class="element e26" data-depth="1.5"><img src="<?php echo $src; ?>/img/e1.png" /></div>
+								<div class="element e27" data-depth="3"><img src="<?php echo $src; ?>/img/e2.png" /></div>
+								<div class="element e28" data-depth=".5"><img src="<?php echo $src; ?>/img/e1.png" /></div>
               </div>
             </section>
 

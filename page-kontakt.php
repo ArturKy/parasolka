@@ -17,7 +17,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="row" id="kontakt">
+			<div class="row with-elements" id="kontakt">
 				<div class="img-bg-medium columns medium-12">
 						<img src="<?php echo $src; ?>/img/kontakt-bg.png" alt="" />
 				</div>
@@ -51,6 +51,10 @@ get_header(); ?>
 						<img src="<?php echo $src; ?>/img/kontakt-bg.png" alt="" />
 					</div>
 				</div>
+				<div class="element e22" data-depth="2"><img src="<?php echo $src; ?>/img/e1.png" /></div>
+				<div class="element e23" data-depth=".5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
+				<div class="element e24" data-depth="3.5"><img src="<?php echo $src; ?>/img/e2.png" /></div>
+
 			</div>
 
 

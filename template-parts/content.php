@@ -25,7 +25,7 @@
 		<div class="side-menu columns small-12 hide-for-large">
 			<?php get_sidebar('center') ?>
 		</div>
-			<div class="row">
+			<div class="row with-elements">
 				<div class="large-9 small-centered medium-centered medium-10 small-11">
 					<header class="entry-header">
 						<?php
@@ -55,6 +55,9 @@
 						<a href="<?php bloginfo('template_url'); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
 					</div>
 				</div>
+				<div class="element e29" data-depth="2.5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
+				<div class="element e30" data-depth="1"><img src="<?php echo $src; ?>/img/e1.png" /></div>
+				<div class="element e31" data-depth="3"><img src="<?php echo $src; ?>/img/e2.png" /></div>
 			</div><!-- .entry-content -->
 		</div> <!-- side-content -->
 	</div><!-- row -->
