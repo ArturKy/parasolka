@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/sass/fonts/stylesheet.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 	<?php $src = get_template_directory_uri(); ?>
+	<link rel="shortcut icon" href="<?php echo $src ?>/favicon.ico" />
 	<?php wp_head(); ?>
 </head>
 
@@ -30,7 +31,7 @@
 
 <header id="header">
 	<div class="row max-width">
-		<div class="logo small-10 medium-2 columns">
+		<div class="logo small-10 medium-3 columns">
 			<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 		</div>
 		<div class="columns small-2 show-for-small-only">
@@ -41,7 +42,7 @@
 			</div>
 		</div>
 		<nav>
-			<div id="main-menu" class="columns small-12 medium-10">
+			<div id="main-menu" class="columns small-12 medium-9">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'menu vertical medium-horizontal') ); ?>
 			</div>
 		</nav>

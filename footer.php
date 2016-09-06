@@ -28,7 +28,7 @@
 						user = "poznan";
 						site = "sp-legal.pl";
 						document.write('<a href=\"mailto:'+user+'@'+site+'\">');
-						document.write(user+'@<span class="antispam">gińSpamerze<\/span>'+site+'<\/a>');
+						document.write('e: '+user+'@<span class="antispam">gińSpamerze<\/span>'+site+'<\/a>');
 					</script>
 				</span>
 		</div><!-- .site-info -->

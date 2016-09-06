@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="ofundacji-text page-ofundacji-text columns large-5 medium-12 large-uncentered small-centered small-12">
                   <?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
                   <div class="page-text"> <?php echo get_field( "tekst" ); ?> </div>
-                  <a href="<?php bloginfo('template_url'); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
+                  <a href="<?php echo get_home_url(); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
                 </div>
 								<div class="element e25" data-depth="2.5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
 								<div class="element e26" data-depth="1.5"><img src="<?php echo $src; ?>/img/e1.png" /></div>

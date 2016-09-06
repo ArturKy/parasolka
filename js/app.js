@@ -5,11 +5,11 @@ $(document).foundation();
  $('.hamburger').on('click', function() {
    if ( $(this).hasClass('open') ) {
      $(this).removeClass('open');
-     $('#primary-menu').slideUp();
+     $('#primary-menu').slideUp("fast");
    }
    else {
      $(this).addClass('open');
-     $('#primary-menu').slideDown();
+     $('#primary-menu').slideDown("fast");
    }
  });
   /*END animacja hamburger-menu*/

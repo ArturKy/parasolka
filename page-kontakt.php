@@ -23,7 +23,7 @@ get_header(); ?>
 				</div>
 				<div class="columns large-6 small-12">
 					<div class="row pt-5">
-						<div class="columns large-6 medium-6 small-6">
+						<div class=" kontakt-adres columns large-6 medium-6 small-6">
 							<span class="footer-brush adres">kontakt</span><br>
 							<span class='footer-text'>
 								t: <a href="tel:<?php echo get_field( "telefon" ); ?>"><?php echo get_field( "telefon" ); ?> </a><br>
@@ -31,7 +31,7 @@ get_header(); ?>
 								a: <?php echo get_field( "adres" ); ?>
 							</span>
 						</div>
-						<div class="columns large-6 medium-6 small-6">
+						<div class="columns kontakt-dane large-6 medium-6 small-6">
 							<span class="footer-brush contact">dane rejestrowe</span><br>
 							<span class='footer-text'>
 								REGON: <?php echo get_field( "regon" ); ?><br>
@@ -52,7 +52,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="element e22" data-depth="2"><img src="<?php echo $src; ?>/img/e1.png" /></div>
-				<div class="element e23" data-depth=".5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
+				<div class="element e23" data-depth="1.5"><img src="<?php echo $src; ?>/img/e3.png" /></div>
 				<div class="element e24" data-depth="3.5"><img src="<?php echo $src; ?>/img/e2.png" /></div>
 
 			</div>

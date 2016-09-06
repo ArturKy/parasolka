@@ -52,7 +52,7 @@
 								'after'  => '</div>',
 							) );
 						?>
-						<a href="<?php bloginfo('template_url'); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
+						<a href="<?php echo get_home_url(); ?>/kontakt" class="button alert contactus"> skontaktuj się z nami  </a>
 					</div>
 				</div>
 				<div class="element e29" data-depth="2.5"><img src="<?php echo $src; ?>/img/e3.png" /></div>

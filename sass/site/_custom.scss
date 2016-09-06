@@ -50,6 +50,9 @@ body * {
     color: #ff3333;
   }
 }
+.current-menu-item a {
+  color: #ff3333;
+}
 footer {
   background-color: #fbf6f6;
   min-height: 200px;
@@ -449,6 +452,9 @@ footer .footer-text {
 /* STOP ERROR 404 */
 
 /*Start wierd floating parallax elemnts*/
+.relative {
+  position: relative;
+}
 
 .element {
 	position:absolute;
@@ -497,55 +503,55 @@ footer .footer-text {
     z-index: -1;
 	}
   &.e9 {
-		top:87%;
+		top:7%;
 		left:calc(50% + 350px);
     width: 35px;
     height: 35px;
 	}
   &.e10 {
-		top:95%;
+		top:15%;
 		left:calc(50% + 500px);
     z-index: -1;
 	}
   &.e11 {
-		top:92%;
+		top:12%;
 		left:calc(50% + 50px);
     z-index: -1;
 	}
   &.e12 {
-		top:135%;
+		top:75%;
 		left:calc(50% + 420px);
     z-index: -1;
     width: 50px;
     height: 50px;
 	}
   &.e13 {
-		top:143%;
+		top:90%;
 		left:calc(50% - 150px);
     width: 25px;
     height: 25px;
 	}
   &.e14 {
-		top:155%;
+		top:12%;
 		left:calc(50% - 300px);
     width: 50px;
     height: 50px;
     z-index: 1;
 	}
   &.e15 {
-		top:152%;
+		top:9%;
 		left:calc(50% - 430px);
     z-index: 1;
     width: 30px;
     height: 30px;
 	}
   &.e16 {
-    top:148%;
+    top:3%;
     left:calc(50%);
     z-index: 11;
   }
   &.e17 {
-    top:205%;
+    top:75%;
     left:calc(50% + 500px);
     z-index: 1;
     width: 25px;
@@ -621,14 +627,9 @@ footer .footer-text {
     z-index: 1;
 	}
   &.e31 {
-		top:45%;
+		top:5%;
 		left:calc(50% + 50px);
     z-index: 1;
-	}
-  &.e8 {
-		top:120%;
-		left:calc(50% + 500px);
-    z-index: -1;
 	}
 }
 /*END wierd floating parallax elemnts*/
@@ -678,7 +679,7 @@ button, input, select, textarea {
   padding-top: 3rem;
 }
 .pt-4 {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .pt-5 {
   padding-top: 5rem;
@@ -717,6 +718,21 @@ button, input, select, textarea {
   margin: 0 auto;
   display: block;
   margin-bottom: -5em;
+}
+
+@media screen and (max-width: 30em) {
+  .kontakt-adres, .kontakt-dane {
+    width: 100%; }
+  .kontakt-adres span, .kontakt-dane span {
+    position: relative;
+    left: calc(50% - 80px);
+  }
+  .kontakt-adres {
+    margin-top: -40px;
+    margin-bottom: 20px; }
+}
+.g-recaptcha {
+  padding: 20px 10px;
 }
 
 /*END kontakt site*/
@@ -758,6 +774,10 @@ button, input, select, textarea {
 @media screen and (max-width: 63.375em) {
   #recent-posts-2 {
     border-bottom: 1px solid #656565;
+    & ul {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 }
 .side-menu {
